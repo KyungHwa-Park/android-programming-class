@@ -3,12 +3,14 @@ package com.example.student.movieapp;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.example.student.movieapp.R;
+import com.example.student.movieapp.adapters.ListViewAdapter;
+import com.example.student.movieapp.adapters.ListViewAdapter2;
 import com.example.student.movieapp.form.ListViewItem;
 
 import java.util.ArrayList;
@@ -63,10 +65,18 @@ public class MovieListActivity extends AppCompatActivity{
                 android.R.layout.simple_list_item_1, list);
 
         // 3-1. 새로 만든 Adapter를 등록한다.
-        ListViewAdapter listViewAdapter = new ListViewAdapter(
-                MovieListActivity.this, R.layout.listview_item, arrayList);
+        // 한 항목에 영화 하나 Adapter
+//        ListViewAdapter listViewAdapter = new ListViewAdapter(
+//                MovieListActivity.this, R.layout.listview_item, arrayList);
+//
+//        lv_movieList.setAdapter(listViewAdapter);
 
-        lv_movieList.setAdapter(listViewAdapter);
+        // 한 항목에 영화 두 개 Adapter
+        ListViewAdapter2 listViewAdapter2 = new ListViewAdapter2(
+                MovieListActivity.this, R.layout.listview_item2, arrayList);
+
+        lv_movieList.setAdapter(listViewAdapter2);
+
 
         // 4. 리스트뷰에 inItemClickListenter 등록하기
         lv_movieList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
