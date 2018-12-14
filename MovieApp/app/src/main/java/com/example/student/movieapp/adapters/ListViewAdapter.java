@@ -1,4 +1,4 @@
-package com.example.student.movieapp;
+package com.example.student.movieapp.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.student.movieapp.R;
 import com.example.student.movieapp.form.ListViewItem;
 
 import java.util.ArrayList;
