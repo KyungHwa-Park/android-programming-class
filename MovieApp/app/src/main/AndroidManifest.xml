@@ -16,10 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BookedActivity"></activity>
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".BookedActivity" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".InfoActivity" />
-        <activity android:name=".BookingActivity"></activity>
+        <activity android:name=".BookingActivity" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
 </manifest>
