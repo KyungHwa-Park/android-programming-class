@@ -1,4 +1,4 @@
-package com.example.student.mp3test;
+package com.example.student.intenttest;
 
 import org.junit.Test;
 

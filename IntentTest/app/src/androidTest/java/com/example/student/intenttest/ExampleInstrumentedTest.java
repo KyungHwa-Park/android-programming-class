@@ -1,4 +1,4 @@
-package com.example.student.mp3test;
+package com.example.student.intenttest;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.student.mp3test", appContext.getPackageName());
+        assertEquals("com.example.student.intenttest", appContext.getPackageName());
     }
 }
